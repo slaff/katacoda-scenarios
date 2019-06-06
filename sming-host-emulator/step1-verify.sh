@@ -1,0 +1,1 @@
+[ -d "$SMING_HOME/../.git" ] && [ "$SMING_ARCH" == "Host" ] && echo "done"
