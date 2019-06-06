@@ -22,8 +22,8 @@ The output from UART1 can be seen by pressing "Ctrl-b" and "1".
 
 If you want to try it execute the command below:
 ```
-pymux -f ~/.pymux.conf
-```
+pymux -f ~/pymux.conf
+```{{execute}}
 
 Once the pymux terminal has started you can run one of the compiled samples, as shown below:
 

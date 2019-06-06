@@ -22,12 +22,21 @@
       },
       {
         "title": "Step 5 - Optional Tools.",
-        "text": "step5.md",
-        "courseData": "step5-background.sh"
+        "text": "step5.md"
       }
     ],
     "intro": {
       "text": "intro.md"
+    },
+     "assets": {
+      "client": [{
+          "file": "pymux.conf",
+          "target": "~/"
+      }],
+      "host01": [{
+        "file": "pymux.conf",
+        "target": "~/"
+      }]
     },
     "finish": {
       "text": "finish.md"
