@@ -5,10 +5,10 @@ Let's get the latest source code from the `develop` branch. To do this just clon
 # Environmental variables
 
 ## SMING_HOME
-Once the source code has been downloaded locally enter the newly created directory using `cd Sming`{{execute}} and make sure to set the following important environmental variable `SMING_HOME`. SMING_HOME should be set and must point to the location of the Sming Framework source code. In our case we can set that variable by running `export SMING_HOME=$(pwd)/Sming`{{execute}}.
+We must set `SMING_HOME` to the location of the Sming Framework source code we've just downloaded. Do this by running `export SMING_HOME=$(pwd)/Sming/Sming`{{execute}}.
 
 ## SMING_ARCH
-Another important environmental variable that needs to be set if we want to use the Host Emulator is `SMING_ARCH`. This one needs to be set to `Host`. Set it by running `export SMING_ARCH=Host`{{execute}}.
+To use the Host Emulator we must set this variable to `Host`, like this: `export SMING_ARCH=Host`{{execute}}.
 
 # Tools
 
