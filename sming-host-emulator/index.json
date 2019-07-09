@@ -9,20 +9,16 @@
         "text": "step1.md"
       },
       {
-        "title": "Step 2 - Compiling the library.",
+        "title": "Step 2 - Compiling samples.",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - Compiling samples.",
+        "title": "Step 3 - Detecting memory issues.",
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - Detecting memory issues.",
+        "title": "Step 4 - Optional Tools.",
         "text": "step4.md"
-      },
-      {
-        "title": "Step 5 - Optional Tools.",
-        "text": "step5.md"
       }
     ],
     "intro": {
