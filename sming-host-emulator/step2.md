@@ -50,7 +50,7 @@ sudo iptables -A FORWARD -i ens3 -o tap0 -p tcp --syn --dport 80 -m conntrack --
 sudo iptables -t nat -A PREROUTING -i ens3 -p tcp --dport 80 -j DNAT --to-destination 192.168.13.10
 ```{{execute}}
 
-The commands above are neede only for this tutorial and environment. Normally you should not expose a Sming Framework based web server to be accessible from Internet.
+The commands above are needed only for this tutorial and environment. Normally you should not expose a Sming Framework based web server to be accessible from Internet.
 
 To compile the HttpServer_Bootstrap sample we need to execute the following commands:
 
