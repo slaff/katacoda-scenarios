@@ -1,10 +1,10 @@
-# Interactive Katacoda Scenarios
+# Interactive Sming Framework Tutorial
 
-[![](http://shields.katacoda.com/katacoda/slaff/count.svg)](https://www.katacoda.com/slaff "Get your profile on Katacoda.com")
+This repository contains the interactive tutorial for "Getting Started" with [Sming Framework](https://github.com/SmingHub/Sming) - fast, lean and clean C++ framework for development of embedded and Internet-of-Things(IoT) applications for ESP8266 microcontroller.
 
-Visit https://www.katacoda.com/slaff to view the profile and interactive scenarios
+Visit this URL [https://www.katacoda.com/slaff/scenarios/sming-host-emulator](https://www.katacoda.com/slaff/scenarios/sming-host-emulator) to start the interactive tutorial
+directly in your web browser.
 
-### Writing Scenarios
-Visit https://www.katacoda.com/docs to learn more about creating Katacoda scenarios
+# Contributing
 
-For examples, visit https://github.com/katacoda/scenario-example
+If you find any issues with this tutorial or have suggestions for improvements make sure to use our issue tracker or submit a Pull Request (PR).
