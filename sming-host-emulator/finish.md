@@ -1,6 +1,5 @@
 Congratulations! You are now a Sming Host Emulator expert!
-Further information can be found in the [Host Emulator wiki page](https://github.com/SmingHub/Sming/wiki/Host-Emulator) and in the [readme.md](https://github.com/SmingHub/Sming/blob/develop/Sming/Arch/Host/readme.md) in the reposiotry.
-
+Further information can be found in the [Host Emulator documentation](https://sming.readthedocs.io/en/latest/_inc/Sming/Arch/Host/README.html).
 
 We thank you for your time and hope to see you as a user or even contributor to [Sming Framework](https://github.com/SmingHub/Sming/).
 

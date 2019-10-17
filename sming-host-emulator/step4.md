@@ -1,5 +1,5 @@
 # pymux
-If you want to use in one terminal window all three data streams: emulator logs, UAR0 and UAR1 then you can install pymux.
+If you want to use in one terminal window all three data streams: emulator logs, UART0 and UART1 then you can install pymux.
 [Pymux](https://github.com/prompt-toolkit/pymux) is a terminal multiplexer, like tmux, written in Python.
 
 In order to install it you should execute the following command

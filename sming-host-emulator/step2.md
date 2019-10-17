@@ -43,7 +43,7 @@ If you enter `cat`{{execute T3}} it will echo a file from the filing system to U
 
 ## HttpServer_Bootstrap
 
-Now let's compile one of the HttpServer samples coming with Sming. 
+Now let's compile one of the HttpServer samples coming with Sming.
 If we want to access our web server we need to expose expose port 80 from our application to be accessible via our web browser.
 ```
 sudo iptables -A FORWARD -i ens3 -o tap0 -p tcp --syn --dport 80 -m conntrack --ctstate NEW -j ACCEPT
@@ -57,12 +57,9 @@ To compile the HttpServer_Bootstrap sample we need to execute the following comm
 ```
 cd $SMING_HOME/../samples/HttpServer_Bootstrap
 make flash
+make run
 ```{{execute}}
 
-
-To view the output from UART0 open a new terminal and type: `telnet localhost 10000`{{execute T2}}
-To view the output from UART1 open a new terminal and type:`telnet localhost 10001`{{execute T3}}
-
-Take a look at the web server on this URL: 
+Take a look at the web server on this URL:
 https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
 
