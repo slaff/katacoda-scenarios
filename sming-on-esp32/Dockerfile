@@ -7,10 +7,7 @@ RUN apt-get update && \
 WORKDIR /opt
 RUN git clone https://github.com/SmingHub/Sming.git
 ENV SMING_HOME=/opt/Sming/Sming
-RUN git clone -b release/v4.0 --recursive https://github.com/espressif/esp-idf.git
-RUN cd esp-idf && ./install.sh && export IDF_PATH=$(pwd) && . ./export.sh && echo $IDF_PATH
+RUN git clone -b release/v4.1 --recursive https://github.com/espressif/esp-idf.git
+RUN cd esp-idf && ./install.sh && export IDF_PATH=$(pwd) && echo $IDF_PATH
 ENV IDF_PATH=/opt/esp-idf
-RUN echo ". $IDF_PATH/export.sh" > ~/.bashrc
-RUN . $IDF_PATH/export.sh && cd $SMING_HOME/../samples/Basic_Blink/ && make SMING_ARCH=Esp32
-
-
+RUN cd $SMING_HOME/../samples/Basic_Blink/ && make -j5 python-requirements all SMING_ARCH=Esp32
