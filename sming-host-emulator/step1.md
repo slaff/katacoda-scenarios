@@ -14,7 +14,16 @@ To use the Host Emulator we must set this variable to `Host`, like this: `export
 
 ## Building
 
-### CMake
+## Installation
+
+Most of the tools that are used by Sming for development can be downloaded and installed using the install.sh script, as shown below:
+
+```
+$SMING_HOME/../Tools/install.sh host
+source $SMING_HOME/../Tools/export.sh
+```{{execute}}
+
+### Newer CMake
 CMake 3.8 or newer is required to build LWIP, our network stack. One of the ways to install a newer version is to run the commands below:
 
 ```
@@ -22,6 +31,7 @@ cd /tmp
 wget https://github.com/Kitware/CMake/releases/download/v3.14.4/cmake-3.14.4-Linux-x86_64.sh
 sudo mkdir /opt/cmake
 sudo sh cmake-3.14.4-Linux-x86_64.sh --skip-license --prefix=/opt/cmake
+if [ -f /usr/bin/cmake ]; then mv /usr/bin/cmake /usr/bin/cmake.original; fi
 sudo ln -s /opt/cmake/bin/cmake /usr/bin/cmake
 ```{{execute}}
 
@@ -34,7 +44,7 @@ sudo apt-get update  -y
 sudo apt-get install -y gcc-9 g++-9 gcc-9-multilib g++-9-multilib
 ```{{execute}}
 
-And make sure that the newly installed GCC compiler version 9 is the default one
+And make sure that the newly installed GCC compiler version 9 is the default one by running the command below:
 ```
 sudo update-alternatives \
 --install /usr/bin/gcc gcc /usr/bin/gcc-9 60 \
