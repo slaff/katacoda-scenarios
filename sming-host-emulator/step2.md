@@ -11,7 +11,8 @@ make -j3
 ```{{execute}}
 
 
-Sit back and relax until the framework libraries and the application are compiled. This will take a while, though we're using `-j3` to speed things up a little.
+Sit back and relax until the framework libraries and the application are compiled.
+This will take a few minutes, though we're using `-j3` to speed things up a little.
 
 Use `make run`{{execute}} to start the application. You can stop it by pressing `Ctrl-C` in the terminal.
 
@@ -56,8 +57,7 @@ To compile the HttpServer_Bootstrap sample we need to execute the following comm
 
 ```
 cd $SMING_HOME/../samples/HttpServer_Bootstrap
-make flash
-make run
+make -j3 flash run
 ```{{execute}}
 
 Take a look at the web server on this URL:
