@@ -29,7 +29,7 @@ Once the pymux terminal has started you can run one of the compiled samples, as 
 
 ```
 cd $SMING_HOME/../samples/Basic_Serial
-make flash
+make flash run
 ```{{execute}}
 
 And then press "Ctrl-b" followed by 1 to see the UART1 output and "Ctrl-b" followed by 0 to see the UART0 output.
