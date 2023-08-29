@@ -47,8 +47,8 @@ If you enter `cat`{{execute T3}} it will echo a file from the filing system to U
 Now let's compile one of the HttpServer samples coming with Sming.
 If we want to access our web server we need to expose expose port 80 from our application to be accessible via our web browser.
 ```
-sudo iptables -A FORWARD -i ens3 -o tap0 -p tcp --syn --dport 80 -m conntrack --ctstate NEW -j ACCEPT
-sudo iptables -t nat -A PREROUTING -i ens3 -p tcp --dport 80 -j DNAT --to-destination 192.168.13.10
+sudo iptables -A FORWARD -i enp1s0 -o tap0 -p tcp --syn --dport 80 -m conntrack --ctstate NEW -j ACCEPT
+sudo iptables -t nat -A PREROUTING -i enp1s0 -p tcp --dport 80 -j DNAT --to-destination 192.168.13.10
 ```{{execute}}
 
 The commands above are needed only for this tutorial and environment. Normally you should not expose a Sming Framework based web server to be accessible from Internet.
@@ -61,5 +61,5 @@ make -j3 flash run
 ```{{execute}}
 
 Take a look at the web server on this URL:
-https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
+{{TRAFFIC_HOST1_80}}
 

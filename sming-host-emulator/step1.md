@@ -40,7 +40,7 @@ We have a script that does that for us. To see its content execute the command b
 
 Now it is time to actually run the script.
 
-`$SMING_HOME/Arch/Host/Tools/setup-network-linux.sh ens3`{{execute}}
+`$SMING_HOME/Arch/Host/Tools/setup-network-linux.sh enp1s0`{{execute}}
 
 It will create a tap0 network interface for our applications and will allow our applications to access Internet.
 
