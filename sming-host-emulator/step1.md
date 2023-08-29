@@ -29,7 +29,12 @@ source Sming/Tools/export.sh
 ## Analyzing
 
 Valgrind is a tool that helps find memory issues within your application. In order to install it we need to execute the following command:
-`sudo apt-get install -y valgrind libc6-dbg:i386`{{execute}}
+
+```
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install -y valgrind libc6-dbg:i386
+```{{execute}}
 
 ## Network
 
