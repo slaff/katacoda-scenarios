@@ -11,4 +11,5 @@ make valgrind
 ```{{execute}}
 
 Take a look at the web server on this URL:
-https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
+{{TRAFFIC_HOST1_80}}
+

@@ -29,7 +29,12 @@ source Sming/Tools/export.sh
 ## Analyzing
 
 Valgrind is a tool that helps find memory issues within your application. In order to install it we need to execute the following command:
-`sudo apt-get install -y valgrind libc6-dbg:i386`{{execute}}
+
+```
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install -y valgrind libc6-dbg:i386
+```{{execute}}
 
 ## Network
 
@@ -40,7 +45,7 @@ We have a script that does that for us. To see its content execute the command b
 
 Now it is time to actually run the script.
 
-`$SMING_HOME/Arch/Host/Tools/setup-network-linux.sh ens3`{{execute}}
+`$SMING_HOME/Arch/Host/Tools/setup-network-linux.sh enp1s0`{{execute}}
 
 It will create a tap0 network interface for our applications and will allow our applications to access Internet.
 
